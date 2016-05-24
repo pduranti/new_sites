@@ -1,0 +1,14 @@
+target/
+reports
+coverage
+*.projectFilesBackup/
+idea/*
+*.log
+mocks/
+mocks-generated/
+.idea/
+.sass-cache
+.jruby-container
+.DS_Store
+.slcache
+

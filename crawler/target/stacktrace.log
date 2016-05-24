@@ -1,0 +1,194 @@
+2016-05-24 16:31:52,159 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at org.springframework.context.support.AbstractApplicationContext.prepareBeanFactory(AbstractApplicationContext.java:556)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:457)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener.initWebApplicationContext(GrailsContextLoaderListener.java:71)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4992)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5490)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at org.codehaus.groovy.grails.cli.support.GrailsRootLoader.loadClass(GrailsRootLoader.java:51)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 15 more
+2016-05-24 16:31:52,165 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at org.codehaus.groovy.grails.cli.support.GrailsRootLoader.loadClass(GrailsRootLoader.java:51)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.context.support.AbstractApplicationContext.prepareBeanFactory(AbstractApplicationContext.java:556)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:457)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener.initWebApplicationContext(GrailsContextLoaderListener.java:71)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4992)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5490)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1565)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-24 16:31:52,166 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,166 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,166 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-24 16:31:52,167 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,290 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,290 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-24 16:31:52,290 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,291 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,291 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-24 16:31:52,291 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,292 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
+2016-05-24 16:31:52,292 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-24 16:31:52,292 [localhost-startStop-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.NoClassDefFoundError: org/springframework/expression/ExpressionParser
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: org.springframework.expression.ExpressionParser
+	at org.codehaus.groovy.tools.RootLoader.findClass(RootLoader.java:175)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.codehaus.groovy.tools.RootLoader.loadClass(RootLoader.java:147)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	... 4 more
