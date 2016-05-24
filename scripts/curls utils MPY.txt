@@ -1,0 +1,65 @@
+
+--registrar un usuario
+
+curl -X POST -H 'Content-Type: application/json' -d '{   "first_name":"Pablo Duranti",   "last_name":"Guatemala",   "email":"pduranti.mgt3@gmail.com",   "password":"newsites", "country_id":"GT",   "site_id":"MGT",   "newsletter":false,   "context":[      {         "pending_registration":"override"       }    ], "confirmed_registration":true, "phone":{"area_code":" ","number":"03492-15619262"}}'  internal.mercadolibre.com/users?caller.id=2341662
+
+--address
+
+curl -X POST -H "Content-Type: application/json" -d '{"country": {id: "GT"}, "state":{"id": "GT-MX"}, "city": {"id":"GT-MX-DF"}, "address_line": "Calle Campos Nro 367 (entre 6 de Agosto y 20 de Octubre)", "street_name": "Campos", "street_number": 367, "other_info": "Edif. Artemis - Planta baja of.4"}' internal.mercadolibre.com/addresses?caller.id=198606195
+
+ID: 172818713
+
+--vendedor con address
+curl -X POST -H 'Content-Type: application/json' -d '{   "first_name":"Pablo Duranti",   "last_name":"Seller",   "email":"pduranti.mgt4@gmail.com",  "password":"newsites", "country_id":"GT", "state": "GT-MX",  "city": "GT-MX-DF", "site_id":"MGT",   "newsletter":false,   "context":[      {         "pending_registration":"override"       }    ], "confirmed_registration":true, "phone":{"area_code":"7","number":"71955977"}}'  internal.mercadolibre.com/users?caller.id=2341662
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"country": {id: "GT"}, "state":{"id": "GT-MX"}, "city": {"id":"GT-MX-DF"}, "address_line": "Calle Campos Nro 367 (entre 6 de Agosto y 20 de Octubre)", "street_name": "Campos", "street_number": 367, "other_info": "Edif. Artemis - Planta baja of.4"}' internal.mercadolibre.com/addresses?caller.id=198606195
+
+
+curl
+164040627
+
+curl -X PUT -H "Content-Type: application/json" -d  '{"types":["default_selling_address"], "street_name": "Campos", "street_number": 367 }' internal.mercadolibre.com/addresses/164040627?caller.id=185876338
+
+curl -X POST -H 'Content-Type: application/json' -d '{   "first_name":"Johnny Dino",   "last_name":"Méndez Bellido",   "email":"atencionalcliente@tibo.bo", "identification":{"type":"C.I.","number":"5376722 sc"},  "password":"changeme", "country_id":"BO", "state": "BO-S",  "site_id":"MBO",   "newsletter":false,   "context":[      {         "pending_registration":"override"       }    ], "confirmed_registration":true, "phone":{"area_code":" ","number":"3245555 / 3547557"}}'  internal.mercadolibre.com/users?caller.id=2341662
+
+
+
+
+curl -X PUT -H 'Content-Type: application/json' -d '{"nickname": "TIBO"}' internal.mercadolibre.com/users/185432587?caller.id=185432587
+
+--con mas datos
+
+curl -X POST -H 'Content-Type: application/json' -d '{   "first_name":"Pablo",   "last_name":"GUATEMALA",   "email":"g39gasfg395@trbvm.com",   "password":"newsites123", "country_id":"GT",   "site_id":"MGT",   "newsletter":false,   "context":[      {         "pending_registration":"override"} ], "confirmed_registration":true, "phone":{"area_code":" ","number":"03492-15619262"}, "state":"GT-AV", "identification":{"type":"DPI","number":"36258325"} }'  localhost:8080/users?caller.id=2341662
+
+ID: 185361403
+
+--crear un address
+
+curl -X POST -H "Content-Type: application/json" -d '{"country": {id: "BO"}, "state":{"id": "BO-S"}, "city": {id:"BO-S-SC"}, "address_line": "Av. La Barranca C/José Vasquez nro. 2"}' internal.mercadolibre.com/addresses?caller.id=185432587
+
+
+
+--ponerle el type default_selling_address
+curl -X PUT -H "Content-Type: application/json" -d  '{"types":["default_selling_address"]}' internal.mercadolibre.com/addresses/172143001?caller.id=196646649
+
+ID: 183923285
+
+--ponerle datos para vender al usuario
+curl -X PUT -H "Content-Type: application/json" -d '{"identification":{"type":"C.I.","number":"123456"}}' 'internal.mercadolibre.com/users/185361403?caller.id=185361403'
+
+
+--crear un item
+  curl -X POST -H "Content-Type: application/json" -d  '{    "title": "Sony - Bravia HDTV LCD de 22 Serie KDL-22BX325",    "category_id":"MBO9238",    "price":365000,    "currency_id":"BOB",    "available_quantity":10,    "buying_mode":"buy_it_now",    "listing_type_id":"gold_premium",    "condition":"new",  "warranty": "24 months",    "pictures":[ {"source": "http://www.tibo.bo/tiendasbolivia/media/catalog/product/s/o/sony_bravia_klv_26l500a_1_1.jpg"}, {"source": "http://www.tibo.bo/tiendasbolivia/media/catalog/product/s/o/sony_bravia_klv_26l500a_2_1.jpg"}, {"source": "http://www.tibo.bo/tiendasbolivia/media/catalog/product/s/o/sony_bravia_klv_26l500a_3_1.jpg"} ], "description": "<ul>\n    <li><strong>BRAVIA Engine 3 (tm):</strong> Procesador de video totalmente digital creados por Sony para reducir el ruido y producir una imagen vibrante y nítida. Esta tecnología optimiza el color, contraste, detalle y claridad de cada escena para el rendimiento excepcional por lo cual son famosas las pantallas Bravia de Alta Definición.</li>\n    <br />\n    <li><strong>Resolucíon:</strong> Panel con resolución 720p de 1.366 x 768 píxeles.</li>\n    <br />\n    <li><strong>Advanced Contrast Enhancer (ACE)</strong> Ajusta en tiempo real los niveles de luz de fondo para dar un contraste mejorado sin ocultar los detalles que el cineasta quería que vieras. El ACE te entrega negros más obscuros en escenas obscuras, así como también mejores detalles en sombras para otorgarte una diferencia que realmente ves.<br />\n    <div style=\"text-align: center;\"><img width=\"494\" height=\"545\" border=\"0\" alt=\"\" src=\"http://www.tibo.bo/tiendasbolivia/media/upload/image/sony_lcd.jpg\" /></div>\n    </li>\n    <li><strong>Entrada USB:</strong> Comparte tus fotos en pantalla grande o escucha tu música favorita. Simplemente conecta una cámara digital, un reproductor MP3 compatible con USB o un dispositivo de almacenamiento USB a la entrada USB del HDTV.</li>\n    <li><strong>Picture in Picture (PIP) (Imagen en imagen)</strong> Con la función PC PIP puedes ver tus programas favoritos en la esquina de la pantalla mientras utilizas la pantalla principal para trabajar o navegar en la red con tu PC.</li>\n    <li><strong>Bass Booster:</strong> Experimenta la sensación de graves intensos de los parlantes de una televisión delgada. Bass Booster utiliza el fenómeno psicoacústico ya instaurado “frecuencia que diferencia dos tonos simultáneos”. Sony realizó meticulosas y reiteradas pruebas auditivas para lograr el equilibrio justo entre sonidos graves intensos y baja distorsión.</li>\n    <li><strong>Bravia Sync:</strong> Controla y opera con comodidad otros dispositivos compatibles con BRAVIA® Sync™ - tales como TV de alta definición BRAVIA®, reproductores de Blu-ray Disc™, sistemas de sonido envolvente, videocámaras Handycam® y cámaras de fotografía digital Cyber-shot®, todo con un solo control remoto.</li>\n    <li><strong>LightSensor:</strong> Disfruta de la posibilidad de personalizar el brillo de la imagen y ahorrar energía sin mover un dedo. El sensor de luz incorporado ajusta automáticamente el brillo de la imagen en base a la cantidad de luz del ambiente.</li>\n    <li><strong>Potencia de salida de audio:</strong> 5W x 2 altavoces estéreo incorporados de 20 vatio Con tecnología Dolby Digital que crea un entorno acústico con calidad de cine. Los modos de audio dinámico, estándar y voz clara le permiten elegir el sonido adecuado para usted.</li>\n</ul>\n<p>&#160;</p>\n<div style=\"text-align: center;\"><img border=\"0\" alt=\"\" src=\"http://www.tibo.bo/tiendasbolivia/media/upload/image/sony_lcd3.jpg\" /></div>\n<p>&#160;</p>\n<p>&#160;</p>"  }' 'internal.mercadolibre.com/items?caller.id=185361403'
+  
+
+
+  curl -H 'Content-Type:application/json' -X PUT -d '{"warranty": "2 años", "price": 365, "currency_id": "USD"}' 'http://internal.mercadolibre.com/items/MBO400000021?caller.id=185361403' 
+
+--crear un bookmark
+  curl -X POST -H "Content-Type: application/json" -d '{"item_id": "MGT400000001"}' 'inernal.mercadolibre.com/users/me/bookmarks?caller.id=183923285'
+
+--crear una orden
+  curl -X POST -H "Content-Type: application/json" -d '{"order_items":[{"item_id":"MGT400000001","quantity": 1}]}' 'localhost:8080/orders?caller.id=184909307&client.id=2222'
+
+
